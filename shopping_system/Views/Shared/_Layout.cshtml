@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<!DOCTYPE html>
 <html lang="en">
     <head>
     <meta charset="utf-8" />
@@ -17,10 +18,10 @@
                     <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                         <ul class="navbar-nav flex-grow-1">
                             <li class="nav-item">
-                                <a class="nav-link text-dark" href="/home/index">Home</a>
+                                <a class="nav-link text-dark" asp-controller="home" asp-action="index" >Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" href="/categories/index">Categories</a>
+                                <a class="nav-link text-dark" asp-controller="categories" asp-action="index">Categories</a>
                             </li>
                     
         </header>
