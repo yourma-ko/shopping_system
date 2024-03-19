@@ -1,4 +1,4 @@
-﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+﻿
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -23,6 +23,7 @@
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-controller="categories" asp-action="index">Categories</a>
                             </li>
+                        
                     
         </header>
         <div class="container">
@@ -34,5 +35,6 @@
             </div>
 
         </div>
+        @await RenderSectionAsync("Scripts", required: false)
     </body>
     </html>
